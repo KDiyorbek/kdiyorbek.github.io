@@ -1,12 +1,19 @@
-body {
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #111111;
+    --text-primary: violet;
+  }
+
+body, a {
   user-select: none;
+  text-decoration: none;
 }
 
-a {
-  text-docaration: none;
-}
-
-.head h1 {
-  color: black;
+.head a, h1 {
   text-align: center;
 }
