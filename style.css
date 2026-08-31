@@ -1,16 +1,22 @@
 :root {
-  --bg-primary: #ffffff;
-  --text-primary: #000000;
+  --bg-primary: #ffffff;   /* white background */
+  --text-primary: #000000; /* black text */
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: #111111;
-    --text-primary: violet;
+    --bg-primary: #111111;   /* dark background */
+    --text-primary: violet;  /* violet text */
   }
+}
 
-body, a {
+body {
   user-select: none;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+a {
   text-decoration: none;
 }
 
