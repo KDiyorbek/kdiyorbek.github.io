@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="qrstyle.css">
+  <script src="qrjava.js"></script>
+</head>
+<body>
+  <div class="container">
+  <label>color
+    <input id="color" type="color" value="#000000">
+    <input id="bgcolor" type="color" value="#ffffff">
+    background
+  </label>
+  <input type="text" id="text" placeholder="enter Link, Text or something else..." class="input"/>
+  <button type="button" onclick="generateQR()">create QR-Code</button>
+  <div id="qr-image">
+    <span class="error"></span>
+  </div>
+  <img src="" id="img"/>
+  </div>   
+
+<script src="javascripts.js"></script>
+</body>
+</html>
